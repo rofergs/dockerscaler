@@ -1,0 +1,4 @@
+Flask==1.0.4
+Flask-Script==2.0.6
+jsons
+docker

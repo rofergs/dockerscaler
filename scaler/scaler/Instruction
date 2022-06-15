@@ -1,0 +1,5 @@
+Assume swarm is running 
+1. Run ./build_push inside flask-service and scaler folder to build images
+2. Deploy stack run: HOSTNAME=$(hostname) docker stack deploy -c docker-stack.yml scaled  
+3. To generate load run: wrk -t12 -c400 -d100s http://127.0.0.1:8082/
+4. To check stats: curl localhost:8081/stats
